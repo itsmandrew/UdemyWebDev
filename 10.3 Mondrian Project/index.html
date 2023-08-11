@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .container {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .painting {
+      display: grid;
+      grid-template-rows: 414px 130px 155px 20px;
+      grid-template-columns: 320px 198px 153px 50px;
+      gap: 9px;
+      background-color: black;
+    }
+
+    .red {
+      background-color: #E72F24;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      grid-column-start: 1;
+    }
+
+    .white-first {
+      background-color: #F0F1EC;
+      grid-row-start: 1;
+      grid-column-start: 2;
+      grid-column-end: span 3;
+    }
+
+    .white-second {
+      background-color: #F0F1EC;
+      grid-row-start: 2;
+      grid-row-end: 4;
+    }
+
+    .white-third {
+      background-color: #F0F1EC;
+      grid-row-start: 2;
+      grid-row-end: 4;
+      grid-column-start: 2;
+      grid-column-end: 4;
+    }
+
+    .white-four {
+      background-color: #F0F1EC;
+      grid-row-start: 3;
+      grid-row-end: 5;
+    }
+
+    .blue {
+      background-color: #004592;
+      row-gap: 50px;
+      border-bottom: 10px solid black;
+    }
+
+    .white-five {
+      background-color: #F0F1EC;
+    }
+    .yellow {
+      background-color: #F9D01E;
+    }
+
+    .black {
+      background-color: #232629;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="painting">
+      <div class="red"></div>
+      <div class="white-first"></div>
+      <div class="white-second"></div>
+      <div class="white-third"></div>
+      <div class="blue"></div>
+      <div class="white-four"></div>
+      <div class="white-five"></div>
+      <div class="yellow"></div>
+      <div class="black"></div>
+    </div>
+
+
+  </div>
+</body>
+
+</html>
